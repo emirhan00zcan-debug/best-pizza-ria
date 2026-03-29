@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-pizza-orange: #FF6321;
+  --color-pizza-black: #0A0A0A;
+  --color-italian-green: #008C45;
+  --color-italian-white: #F4F5F0;
+  --color-italian-red: #CD212A;
+}
+
+@layer base {
+  body {
+    @apply bg-pizza-black text-white font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
